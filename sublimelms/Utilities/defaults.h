@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void (^METHODCALLBACK) (NSDictionary*);
 
 @interface defaults : NSObject
 
