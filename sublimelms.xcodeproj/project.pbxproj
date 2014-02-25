@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		639030DD18BCB6540071CC36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030DC18BCB6540071CC36 /* UIKit.framework */; };
+		639030DF18BCB6540071CC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030DE18BCB6540071CC36 /* Foundation.framework */; };
+		639030E118BCB6540071CC36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030E018BCB6540071CC36 /* CoreGraphics.framework */; };
+		639030E718BCB6540071CC36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 639030E518BCB6540071CC36 /* InfoPlist.strings */; };
+		639030E918BCB6540071CC36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639030E818BCB6540071CC36 /* main.m */; };
+		639030ED18BCB6540071CC36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639030EC18BCB6540071CC36 /* AppDelegate.m */; };
+		639030F018BCB6540071CC36 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639030EF18BCB6540071CC36 /* FirstViewController.m */; };
+		639030F218BCB6550071CC36 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 639030F118BCB6550071CC36 /* first.png */; };
+		639030F418BCB6550071CC36 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639030F318BCB6550071CC36 /* first@2x.png */; };
+		639030F718BCB6550071CC36 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639030F618BCB6550071CC36 /* SecondViewController.m */; };
+		639030F918BCB6550071CC36 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 639030F818BCB6550071CC36 /* second.png */; };
+		639030FB18BCB6550071CC36 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639030FA18BCB6550071CC36 /* second@2x.png */; };
+		639030FE18BCB6550071CC36 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639030FC18BCB6550071CC36 /* FirstViewController.xib */; };
+		6390310118BCB6550071CC36 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639030FF18BCB6550071CC36 /* SecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		639030D818BCB6540071CC36 /* sublimelms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sublimelms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		639030DC18BCB6540071CC36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		639030DE18BCB6540071CC36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		639030E018BCB6540071CC36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		639030E418BCB6540071CC36 /* sublimelms-Info.plist */ = {isa = PBXFileReference; path = "sublimelms-Info.plist"; sourceTree = "<group>"; };
+		639030E618BCB6540071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		639030E818BCB6540071CC36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		639030EA18BCB6540071CC36 /* sublimelms-Prefix.pch */ = {isa = PBXFileReference; path = "sublimelms-Prefix.pch"; sourceTree = "<group>"; };
+		639030EB18BCB6540071CC36 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		639030EC18BCB6540071CC36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		639030EE18BCB6540071CC36 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		639030EF18BCB6540071CC36 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		639030F118BCB6550071CC36 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		639030F318BCB6550071CC36 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		639030F518BCB6550071CC36 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		639030F618BCB6550071CC36 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		639030F818BCB6550071CC36 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		639030FA18BCB6550071CC36 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		639030FD18BCB6550071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		6390310018BCB6550071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		639030D518BCB6540071CC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639030DD18BCB6540071CC36 /* UIKit.framework in Frameworks */,
+				639030DF18BCB6540071CC36 /* Foundation.framework in Frameworks */,
+				639030E118BCB6540071CC36 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		639030CD18BCB6540071CC36 = {
+			isa = PBXGroup;
+			children = (
+				639030E218BCB6540071CC36 /* sublimelms */,
+				639030DB18BCB6540071CC36 /* Frameworks */,
+				639030D918BCB6540071CC36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		639030D918BCB6540071CC36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				639030D818BCB6540071CC36 /* sublimelms.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		639030DB18BCB6540071CC36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639030DC18BCB6540071CC36 /* UIKit.framework */,
+				639030DE18BCB6540071CC36 /* Foundation.framework */,
+				639030E018BCB6540071CC36 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639030E218BCB6540071CC36 /* sublimelms */ = {
+			isa = PBXGroup;
+			children = (
+				639030EB18BCB6540071CC36 /* AppDelegate.h */,
+				639030EC18BCB6540071CC36 /* AppDelegate.m */,
+				639030EE18BCB6540071CC36 /* FirstViewController.h */,
+				639030EF18BCB6540071CC36 /* FirstViewController.m */,
+				639030F118BCB6550071CC36 /* first.png */,
+				639030F318BCB6550071CC36 /* first@2x.png */,
+				639030F518BCB6550071CC36 /* SecondViewController.h */,
+				639030F618BCB6550071CC36 /* SecondViewController.m */,
+				639030F818BCB6550071CC36 /* second.png */,
+				639030FA18BCB6550071CC36 /* second@2x.png */,
+				639030FC18BCB6550071CC36 /* FirstViewController.xib */,
+				639030FF18BCB6550071CC36 /* SecondViewController.xib */,
+				639030E318BCB6540071CC36 /* Supporting Files */,
+			);
+			path = sublimelms;
+			sourceTree = "<group>";
+		};
+		639030E318BCB6540071CC36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				639030E418BCB6540071CC36 /* sublimelms-Info.plist */,
+				639030E518BCB6540071CC36 /* InfoPlist.strings */,
+				639030E818BCB6540071CC36 /* main.m */,
+				639030EA18BCB6540071CC36 /* sublimelms-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		639030D718BCB6540071CC36 /* sublimelms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6390310418BCB6550071CC36 /* Build configuration list for PBXNativeTarget "sublimelms" */;
+			buildPhases = (
+				639030D418BCB6540071CC36 /* Sources */,
+				639030D518BCB6540071CC36 /* Frameworks */,
+				639030D618BCB6540071CC36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sublimelms;
+			productName = sublimelms;
+			productReference = 639030D818BCB6540071CC36 /* sublimelms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		639030CF18BCB6540071CC36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 639030D218BCB6540071CC36 /* Build configuration list for PBXProject "sublimelms" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 639030CD18BCB6540071CC36;
+			productRefGroup = 639030D918BCB6540071CC36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				639030D718BCB6540071CC36 /* sublimelms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		639030D618BCB6540071CC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639030E718BCB6540071CC36 /* InfoPlist.strings in Resources */,
+				639030F218BCB6550071CC36 /* first.png in Resources */,
+				639030F418BCB6550071CC36 /* first@2x.png in Resources */,
+				639030F918BCB6550071CC36 /* second.png in Resources */,
+				639030FB18BCB6550071CC36 /* second@2x.png in Resources */,
+				639030FE18BCB6550071CC36 /* FirstViewController.xib in Resources */,
+				6390310118BCB6550071CC36 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		639030D418BCB6540071CC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639030E918BCB6540071CC36 /* main.m in Sources */,
+				639030ED18BCB6540071CC36 /* AppDelegate.m in Sources */,
+				639030F018BCB6540071CC36 /* FirstViewController.m in Sources */,
+				639030F718BCB6550071CC36 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		639030E518BCB6540071CC36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				639030E618BCB6540071CC36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		639030FC18BCB6550071CC36 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				639030FD18BCB6550071CC36 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		639030FF18BCB6550071CC36 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6390310018BCB6550071CC36 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6390310218BCB6550071CC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6390310318BCB6550071CC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6390310518BCB6550071CC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sublimelms/sublimelms-Prefix.pch";
+				INFOPLIST_FILE = "sublimelms/sublimelms-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6390310618BCB6550071CC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sublimelms/sublimelms-Prefix.pch";
+				INFOPLIST_FILE = "sublimelms/sublimelms-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		639030D218BCB6540071CC36 /* Build configuration list for PBXProject "sublimelms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6390310218BCB6550071CC36 /* Debug */,
+				6390310318BCB6550071CC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6390310418BCB6550071CC36 /* Build configuration list for PBXNativeTarget "sublimelms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6390310518BCB6550071CC36 /* Debug */,
+				6390310618BCB6550071CC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 639030CF18BCB6540071CC36 /* Project object */;
+}
