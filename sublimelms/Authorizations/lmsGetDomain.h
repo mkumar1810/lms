@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "defaults.h"
 
 @interface lmsGetDomain : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {

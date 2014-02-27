@@ -19,19 +19,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     __block id myself = self;
-    _loginSucceeded = ^(NSDictionary * p_dictInfo)
+    __domainCaptured = ^(NSDictionary *p_domainInfo)
+    {
+        [myself domainCaptured:p_domainInfo];
+    };
+    __loginSucceeded = ^(NSDictionary * p_dictInfo)
     {
         [myself loginSucceeded:p_dictInfo];
     };
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    __domainname = [__lmsds domainName];
+    __accesstoken = [__lmsds accessToken];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    /*UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
-    self.window.rootViewController = self.tabBarController;
+    self.window.rootViewController = self.tabBarController;*/
+    //scenario when domain name is not available domain name need to be captured
+    //that is done below
+    if (__domainname==nil)
+    {
+        lmsGetDomain l_getDomain = [[lmsGetDomain alloc] initWithNibName:@"lmsGetDomain" andReturnNotification:@"domainCaptured"];
+        [self.window addSubview:getDomain.view];
+        //self.window.rootViewController = getDomain;
+        [self.window makeKeyAndVisible];
+        //[getDomain release];
+        return YES;
+    }
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -88,5 +105,18 @@
 {
 }
 */
+
+- (void) domainCaptured:(NSDictionary*) p_domainInfo;
+{
+    //[getDomain.view removeFromSuperview];
+    NSLog(@"inside domain captured event");
+    __domainname = [p_domainInfo valueForKey:@"domain"];
+    [__lmsds writeDomainName:__domainname];
+    lmsLogin *l_login = [[lmsLogin alloc] initWithNibName:@"lmsLogin" andReturnNotification:@"loginOpsCompleted" andDomainName:__domainname];
+    [self.window addSubview:l_login.view];
+    //self.window.rootViewController = login;
+    [self.window makeKeyAndVisible];   
+    //[login release];
+}
 
 @end
