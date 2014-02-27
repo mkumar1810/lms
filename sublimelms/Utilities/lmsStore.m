@@ -28,7 +28,7 @@
     return self;
 }
 
-- (void) checkAndCreateIfStoreNotAvailable
++ (void) checkAndCreateIfStoreNotAvailable
 {
     return;
     //disabled time being to make it enable after new ios version is restored
@@ -41,38 +41,38 @@
     }*/
 }
 
-- (NSString*) domainName
++ (NSString*) domainName
 {
     return [self readValueForKey:@"DOMAINNAME"];
 }
 
-- (NSString*) accessToken
++ (NSString*) accessToken
 {
     return [self readValueForKey:@"ACCESSTOKEN"];
 }
 
-- (NSString*) userId
++ (NSString*) userId
 {
     return [self readValueForKey:@"USERID"];
 }
 
-- (void) writeDomainName : (NSString*) p_domainName
++ (void) writeDomainName : (NSString*) p_domainName
 {
     [self writeKey:@"DOMAINNAME" andValue:p_domainName];
 }
 
-- (void) writeAccessToken:(NSString *)p_accessToken
++ (void) writeAccessToken:(NSString *)p_accessToken
 {
     [self writeKey:@"ACCESSTOKEN" andValue:p_accessToken];
 }
 
-- (void) writeUserId :(NSString*) p_userid
++ (void) writeUserId :(NSString*) p_userid
 {
     [self writeKey:@"USERID" andValue:p_userid];
 }
 
 
-- (void) writeKey:(NSString*) p_key andValue:(NSString*) p_value
++ (void) writeKey:(NSString*) p_key andValue:(NSString*) p_value
 {
     //need to enable later
     /*NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile: filePath];
@@ -84,7 +84,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSString*) readValueForKey:(NSString*) p_key
++ (NSString*) readValueForKey:(NSString*) p_key
 {
     //need to enable later
     NSDictionary * dict = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
@@ -95,14 +95,10 @@
             return [dict valueForKey:p_key];
         }
     }
-    return nil; //[[NSUserDefaults standardUserDefaults] valueForKey:p_key]; // [[NSUserDefaults standardUserDefaults] valueForKey:p_key];
-    /*NSMutableDictionary *savedStock = [[NSMutableDictionary alloc] initWithContentsOfFile: filePath];
-    returnValue = [savedStock objectForKey:p_key];
-    [savedStock release];    
-    return returnValue;*/
+    return nil; 
 }
 
-- (void) removeEntireLoginInformation
++ (void) removeEntireLoginInformation
 {
     NSLog(@"REMOVING LOGIN ENTIRE INFORMATION");
     NSDictionary * dict = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];

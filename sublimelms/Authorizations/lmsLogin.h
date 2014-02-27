@@ -7,18 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "defaults.h"
 
 @interface lmsLogin : UIViewController <UIWebViewDelegate>
 {
     IBOutlet UIWebView *wv;
     IBOutlet UIActivityIndicatorView *actView;
-    NSString *returnNotify;
+    METHODCALLBACK __returnNotify;
     BOOL l_notified;
     NSString *l_domainname;
     NSString *l_accesscode;
 }
 
-- (id)initWithNibName:(NSString *) xibName andReturnNotification:(NSString*) p_retNotify andDomainName:(NSString*) p_domainName;
+- (id)initWithNibName:(NSString *) xibName andReturnCallback:(NSString*) p_retNotify andDomainName:(NSString*) p_domainName;
 
 @property (nonatomic, retain) UIWebView *wv;
 @property (nonatomic, retain) UIActivityIndicatorView *actView;

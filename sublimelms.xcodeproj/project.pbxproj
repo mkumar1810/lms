@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638AED6D18BF50C000D4ECFC /* Authorizations in Resources */ = {isa = PBXBuildFile; fileRef = 638AED6C18BF50C000D4ECFC /* Authorizations */; };
 		639030DD18BCB6540071CC36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030DC18BCB6540071CC36 /* UIKit.framework */; };
 		639030DF18BCB6540071CC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030DE18BCB6540071CC36 /* Foundation.framework */; };
 		639030E118BCB6540071CC36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030E018BCB6540071CC36 /* CoreGraphics.framework */; };
@@ -21,13 +22,13 @@
 		639030FB18BCB6550071CC36 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639030FA18BCB6550071CC36 /* second@2x.png */; };
 		639030FE18BCB6550071CC36 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639030FC18BCB6550071CC36 /* FirstViewController.xib */; };
 		6390310118BCB6550071CC36 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639030FF18BCB6550071CC36 /* SecondViewController.xib */; };
-		6390310818BCC4E60071CC36 /* Authorizations in Resources */ = {isa = PBXBuildFile; fileRef = 6390310718BCC4E60071CC36 /* Authorizations */; };
 		6390311618BCCA110071CC36 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = 6390311518BCCA110071CC36 /* Utilities */; };
 		6390311D18BCCC370071CC36 /* defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390311C18BCCC370071CC36 /* defaults.m */; };
 		6390311F18BCCD0E0071CC36 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 6390311E18BCCD0E0071CC36 /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		638AED6C18BF50C000D4ECFC /* Authorizations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Authorizations; sourceTree = "<group>"; };
 		639030D818BCB6540071CC36 /* sublimelms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sublimelms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639030DC18BCB6540071CC36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		639030DE18BCB6540071CC36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,7 +49,6 @@
 		639030FA18BCB6550071CC36 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		639030FD18BCB6550071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		6390310018BCB6550071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
-		6390310718BCC4E60071CC36 /* Authorizations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Authorizations; sourceTree = "<group>"; };
 		6390311518BCCA110071CC36 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
 		6390311B18BCCC370071CC36 /* defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defaults.h; path = sublimelms/Utilities/defaults.h; sourceTree = "<group>"; };
 		6390311C18BCCC370071CC36 /* defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = defaults.m; path = sublimelms/Utilities/defaults.m; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		639030E218BCB6540071CC36 /* sublimelms */ = {
 			isa = PBXGroup;
 			children = (
+				638AED6C18BF50C000D4ECFC /* Authorizations */,
 				6390311518BCCA110071CC36 /* Utilities */,
-				6390310718BCC4E60071CC36 /* Authorizations */,
 				639030EB18BCB6540071CC36 /* AppDelegate.h */,
 				639030EC18BCB6540071CC36 /* AppDelegate.m */,
 				639030EE18BCB6540071CC36 /* FirstViewController.h */,
@@ -189,9 +189,9 @@
 				639030FB18BCB6550071CC36 /* second@2x.png in Resources */,
 				639030FE18BCB6550071CC36 /* FirstViewController.xib in Resources */,
 				6390310118BCB6550071CC36 /* SecondViewController.xib in Resources */,
-				6390310818BCC4E60071CC36 /* Authorizations in Resources */,
 				6390311618BCCA110071CC36 /* Utilities in Resources */,
 				6390311F18BCCD0E0071CC36 /* Resources in Resources */,
+				638AED6D18BF50C000D4ECFC /* Authorizations in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +288,17 @@
 		6390310518BCB6550071CC36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm6,
+					arm7,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sublimelms/sublimelms-Prefix.pch";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "Utilities Authorizations";
 				INFOPLIST_FILE = "sublimelms/sublimelms-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -299,10 +306,17 @@
 		6390310618BCB6550071CC36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm6,
+					arm7,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sublimelms/sublimelms-Prefix.pch";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "Utilities Authorizations";
 				INFOPLIST_FILE = "sublimelms/sublimelms-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -14,10 +14,10 @@
     CGPoint scrollOffset;
     IBOutlet UITableView *tv;
     IBOutlet UITableViewCell *tvc;
-    NSString *returnNotify;
     IBOutlet UIScrollView *scrollView;
     IBOutlet UITextField *txtdomain;
     CGRect _screensize;
+    METHODCALLBACK __returnNotify;
 }
 
 @property (nonatomic, retain) UITableView *tv;
@@ -25,7 +25,7 @@
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) UITextField *txtdomain;
 
-- (id)initWithNibName:(NSString *) xibName andReturnNotification:(NSString*) p_retNotify;
+- (id)initWithNibName:(NSString *) xibName andReturnCallback:(METHODCALLBACK) p_retNotify;
 
 - (IBAction)connectClicked:(id)sender;
 @end

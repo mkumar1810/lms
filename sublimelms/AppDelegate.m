@@ -29,8 +29,6 @@
         [myself loginSucceeded:p_dictInfo];
     };
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    __domainname = [__lmsds domainName];
-    __accesstoken = [__lmsds accessToken];
     // Override point for customization after application launch.
     /*UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
@@ -39,10 +37,10 @@
     self.window.rootViewController = self.tabBarController;*/
     //scenario when domain name is not available domain name need to be captured
     //that is done below
-    if (__domainname==nil)
+    if ([lmsStore domainName]==nil)
     {
-        lmsGetDomain l_getDomain = [[lmsGetDomain alloc] initWithNibName:@"lmsGetDomain" andReturnNotification:@"domainCaptured"];
-        [self.window addSubview:getDomain.view];
+        lmsGetDomain *l_getDomain = [[lmsGetDomain alloc] initWithNibName:@"lmsGetDomain" andReturnCallback:__domainCaptured];
+        [self.window addSubview:l_getDomain.view];
         //self.window.rootViewController = getDomain;
         [self.window makeKeyAndVisible];
         //[getDomain release];
@@ -110,13 +108,17 @@
 {
     //[getDomain.view removeFromSuperview];
     NSLog(@"inside domain captured event");
-    __domainname = [p_domainInfo valueForKey:@"domain"];
-    [__lmsds writeDomainName:__domainname];
-    lmsLogin *l_login = [[lmsLogin alloc] initWithNibName:@"lmsLogin" andReturnNotification:@"loginOpsCompleted" andDomainName:__domainname];
+    [lmsStore writeDomainName:[p_domainInfo valueForKey:@"domain"]];
+    lmsLogin *l_login = [[lmsLogin alloc] initWithNibName:@"lmsLogin" andReturnCallback:__loginSucceeded andDomainName:[lmsStore domainName]];
     [self.window addSubview:l_login.view];
     //self.window.rootViewController = login;
     [self.window makeKeyAndVisible];   
     //[login release];
+}
+
+- (void) loginSucceeded:(NSDictionary*) p_loginInfo
+{
+    
 }
 
 @end

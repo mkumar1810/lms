@@ -16,9 +16,6 @@
 {
     METHODCALLBACK __domainCaptured;
     METHODCALLBACK __loginSucceeded;
-    lmsStore *__lmsds;    
-    NSString *__domainname;
-    NSString *__accesstoken;
 }
 
 @property (strong, nonatomic) UIWindow *window;

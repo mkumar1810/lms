@@ -8,19 +8,21 @@
 
 #import "lmsGetDomain.h"
 
-@implementation lmsGetDomain
 static bool shouldScroll = true;
+
+@implementation lmsGetDomain
 
 @synthesize tv,tvc, scrollView, txtdomain;
 
-- (id)initWithNibName:(NSString *) xibName andReturnNotification:(NSString*) p_retNotify
+- (id)initWithNibName:(NSString *) xibName andReturnCallback:(METHODCALLBACK) p_retNotify
 {
     self = [super initWithNibName:xibName bundle:nil];
     NSLog(@"nib name is %@", xibName);
     if (self) {
+        __returnNotify = p_retNotify;
         CGRect tvrect = [tv frame];
         tvrect.size.height = [tvc frame].size.height;
-        returnNotify = p_retNotify;
+        
         //[tvc setHidden:YES];
         [tv setFrame:tvrect];
         [tv setBackgroundColor:self.view.backgroundColor];

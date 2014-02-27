@@ -11,11 +11,11 @@
 @implementation lmsLogin
 @synthesize wv, actView;
 
-- (id)initWithNibName:(NSString *) xibName andReturnNotification:(NSString*) p_retNotify andDomainName:(NSString*) p_domainName
+- (id)initWithNibName:(NSString *) xibName andReturnCallback:(NSString*) p_retNotify andDomainName:(NSString*) p_domainName
 {
     self = [super initWithNibName:xibName bundle:nil];
     if (self) {
-        returnNotify = p_retNotify;
+        __returnNotify = p_retNotify;
         // Custom initialization
         l_domainname = p_domainName;
     } 

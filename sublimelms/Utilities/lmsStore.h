@@ -13,18 +13,18 @@
 {
     NSString *fileName;
     NSString *filePath;
-  }
+}
 
-- (void) checkAndCreateIfStoreNotAvailable;
-- (NSString*) domainName;
-- (NSString*) accessToken;
-- (NSString*) userId;
-- (void) writeDomainName : (NSString*) p_domainName;
-- (void) writeAccessToken : (NSString*) p_accessToken;
-- (void) writeUserId :(NSString*) p_userid;
-- (void) writeKey:(NSString*) p_key andValue:(NSString*) p_value;
-- (void) removeEntireLoginInformation;
-- (NSString*) readValueForKey:(NSString*) p_key;
++ (void) checkAndCreateIfStoreNotAvailable;
++ (NSString*) domainName;
++ (NSString*) accessToken;
++ (NSString*) userId;
++ (void) writeDomainName : (NSString*) p_domainName;
++ (void) writeAccessToken : (NSString*) p_accessToken;
++ (void) writeUserId :(NSString*) p_userid;
++ (void) writeKey:(NSString*) p_key andValue:(NSString*) p_value;
++ (void) removeEntireLoginInformation;
++ (NSString*) readValueForKey:(NSString*) p_key;
 
 @end
 
