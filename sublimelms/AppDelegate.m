@@ -28,6 +28,10 @@
     {
         [myself loginSucceeded:p_dictInfo];
     };
+    __accessTokenFetched = ^(NSDictionary * p_tokenInfo)
+    {
+        [myself accesTokenFetched:p_tokenInfo];
+    };
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     /*UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
@@ -127,7 +131,17 @@
 
 - (void) loginSucceeded:(NSDictionary*) p_loginInfo
 {
-    
+    NSLog(@"login result %@", p_loginInfo);
+    NSString *l_loginCode = [NSString stringWithFormat:@"\"%@\"", [p_loginInfo  valueForKey:@"code"]];    
+    NSLog(@"login code is %@", l_loginCode);
+        /*jsonMessage = [NSString stringWithFormat:@"{\"client_id\":\"%@\",\"redirect_uri\":\"%@\",\"client_secret\":\"%@\",\"code\":\"%@\"}",[inputParms valueForKey:@"clientid"],[inputParms valueForKey:@"redirecturi"],[inputParms valueForKey:@"clientsecret"],[inputParms valueForKey:@"code"]];*/    
+    NSDictionary *l_restData = [NSDictionary dictionaryWithObjectsAndKeys:@"\"4\"", @"client_id",@"\"bqDAYWVKItDiNEst3c34s3QvyPI8ABqtwmxOWLnh9SC0pUhGdr3TjhWWMlhzsL28\"", @"client_secret",  @"urn:ietf:wg:oauth:2.0:oob", @"redirect_uri",l_loginCode,@"code", nil];    
+    [[lmsRESTProxy alloc] initDataWithAPIType:@"GETACCESSTOKEN" andInputParams:l_restData andReturnMethod:__accessTokenFetched];
+}
+
+- (void) accesTokenFetched:(NSDictionary*) p_tokenInfo
+{
+    NSLog(@"token info %@", p_tokenInfo);
 }
 
 @end

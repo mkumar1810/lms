@@ -11,11 +11,13 @@
 #import "defaults.h"
 #import "lmsLogin.h"
 #import "lmsStore.h"
+#import "lmsRESTProxy.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 {
     METHODCALLBACK __domainCaptured;
     METHODCALLBACK __loginSucceeded;
+    METHODCALLBACK __accessTokenFetched;
 }
 
 @property (strong, nonatomic) UIWindow *window;
@@ -24,5 +26,6 @@
 
 - (void) domainCaptured:(NSDictionary*) p_domainInfo;
 - (void) loginSucceeded:(NSDictionary*) p_loginInfo;
+- (void) accesTokenFetched:(NSDictionary*) p_tokenInfo;
 
 @end

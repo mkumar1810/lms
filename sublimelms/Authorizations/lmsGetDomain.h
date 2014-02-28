@@ -16,6 +16,7 @@
     IBOutlet UITableViewCell *tvc;
     IBOutlet UIScrollView *scrollView;
     IBOutlet UITextField *txtdomain;
+    NSString * sdlfk;
     CGRect _screensize;
     METHODCALLBACK __returnNotify;
 }

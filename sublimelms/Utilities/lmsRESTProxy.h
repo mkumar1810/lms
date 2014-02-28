@@ -6,10 +6,7 @@
 //  Copyright (c) 2014 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "defaults.h"
-#import "lmsStore.h"
-
 
 @interface lmsRESTProxy : NSObject <NSURLConnectionDataDelegate,NSURLConnectionDelegate>
 {
@@ -24,7 +21,7 @@
     METHODCALLBACK _proxyReturnMethod;
 }
 
-- (id) fetchDataWithAPIType:(NSString*) p_apiType andInputParams:(NSDictionary*) prmDict andReturnMethod:(METHODCALLBACK) p_returnMethod;
+- (void) initDataWithAPIType:(NSString*) p_apiType andInputParams:(NSDictionary*) prmDict andReturnMethod:(METHODCALLBACK) p_returnMethod;
 - (void) generateData;
 - (void) showAlertMessage:(NSString *) dispMessage;
 - (void) returnErrorMessage:(NSString*) p_errmsg;
