@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		638AED6D18BF50C000D4ECFC /* Authorizations in Resources */ = {isa = PBXBuildFile; fileRef = 638AED6C18BF50C000D4ECFC /* Authorizations */; };
+		63894EDA18C0126C00C2C647 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 63894ED118C0126C00C2C647 /* NSObject+SBJSON.m */; };
+		63894EDB18C0126C00C2C647 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 63894ED318C0126C00C2C647 /* NSString+SBJSON.m */; };
+		63894EDC18C0126C00C2C647 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63894ED518C0126C00C2C647 /* SBJsonBase.m */; };
+		63894EDD18C0126C00C2C647 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 63894ED718C0126C00C2C647 /* SBJsonParser.m */; };
+		63894EDE18C0126C00C2C647 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63894ED918C0126C00C2C647 /* SBJsonWriter.m */; };
+		638AED7B18BF5C2200D4ECFC /* lmsGetDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AED7618BF5C2200D4ECFC /* lmsGetDomain.m */; };
+		638AED7C18BF5C2200D4ECFC /* lmsGetDomain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638AED7718BF5C2200D4ECFC /* lmsGetDomain.xib */; };
+		638AED7D18BF5C2200D4ECFC /* lmsLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AED7918BF5C2200D4ECFC /* lmsLogin.m */; };
+		638AED7E18BF5C2200D4ECFC /* lmsLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638AED7A18BF5C2200D4ECFC /* lmsLogin.xib */; };
+		638AED8518BF5C4500D4ECFC /* lmsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AED8318BF5C4500D4ECFC /* lmsStore.m */; };
+		638AED8818BF5C5C00D4ECFC /* loginimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 638AED8718BF5C5C00D4ECFC /* loginimage.png */; };
+		638AED9318BF6B8800D4ECFC /* lmsRESTProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AED9218BF6B8800D4ECFC /* lmsRESTProxy.m */; };
 		639030DD18BCB6540071CC36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030DC18BCB6540071CC36 /* UIKit.framework */; };
 		639030DF18BCB6540071CC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030DE18BCB6540071CC36 /* Foundation.framework */; };
 		639030E118BCB6540071CC36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639030E018BCB6540071CC36 /* CoreGraphics.framework */; };
@@ -22,13 +33,34 @@
 		639030FB18BCB6550071CC36 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639030FA18BCB6550071CC36 /* second@2x.png */; };
 		639030FE18BCB6550071CC36 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639030FC18BCB6550071CC36 /* FirstViewController.xib */; };
 		6390310118BCB6550071CC36 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639030FF18BCB6550071CC36 /* SecondViewController.xib */; };
-		6390311618BCCA110071CC36 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = 6390311518BCCA110071CC36 /* Utilities */; };
 		6390311D18BCCC370071CC36 /* defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390311C18BCCC370071CC36 /* defaults.m */; };
-		6390311F18BCCD0E0071CC36 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 6390311E18BCCD0E0071CC36 /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		638AED6C18BF50C000D4ECFC /* Authorizations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Authorizations; sourceTree = "<group>"; };
+		63894ECF18C0126C00C2C647 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		63894ED018C0126C00C2C647 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		63894ED118C0126C00C2C647 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		63894ED218C0126C00C2C647 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		63894ED318C0126C00C2C647 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		63894ED418C0126C00C2C647 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		63894ED518C0126C00C2C647 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		63894ED618C0126C00C2C647 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		63894ED718C0126C00C2C647 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		63894ED818C0126C00C2C647 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		63894ED918C0126C00C2C647 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		638AED7518BF5C2200D4ECFC /* lmsGetDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmsGetDomain.h; sourceTree = "<group>"; };
+		638AED7618BF5C2200D4ECFC /* lmsGetDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lmsGetDomain.m; sourceTree = "<group>"; };
+		638AED7718BF5C2200D4ECFC /* lmsGetDomain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = lmsGetDomain.xib; sourceTree = "<group>"; };
+		638AED7818BF5C2200D4ECFC /* lmsLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmsLogin.h; sourceTree = "<group>"; };
+		638AED7918BF5C2200D4ECFC /* lmsLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lmsLogin.m; sourceTree = "<group>"; };
+		638AED7A18BF5C2200D4ECFC /* lmsLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = lmsLogin.xib; sourceTree = "<group>"; };
+		638AED8018BF5C4500D4ECFC /* defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaults.h; sourceTree = "<group>"; };
+		638AED8118BF5C4500D4ECFC /* defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = defaults.m; sourceTree = "<group>"; };
+		638AED8218BF5C4500D4ECFC /* lmsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmsStore.h; sourceTree = "<group>"; };
+		638AED8318BF5C4500D4ECFC /* lmsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lmsStore.m; sourceTree = "<group>"; };
+		638AED8718BF5C5C00D4ECFC /* loginimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginimage.png; sourceTree = "<group>"; };
+		638AED9118BF6B8800D4ECFC /* lmsRESTProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmsRESTProxy.h; sourceTree = "<group>"; };
+		638AED9218BF6B8800D4ECFC /* lmsRESTProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lmsRESTProxy.m; sourceTree = "<group>"; };
 		639030D818BCB6540071CC36 /* sublimelms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sublimelms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639030DC18BCB6540071CC36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		639030DE18BCB6540071CC36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,10 +81,8 @@
 		639030FA18BCB6550071CC36 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		639030FD18BCB6550071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		6390310018BCB6550071CC36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
-		6390311518BCCA110071CC36 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
 		6390311B18BCCC370071CC36 /* defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defaults.h; path = sublimelms/Utilities/defaults.h; sourceTree = "<group>"; };
 		6390311C18BCCC370071CC36 /* defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = defaults.m; path = sublimelms/Utilities/defaults.m; sourceTree = "<group>"; };
-		6390311E18BCCD0E0071CC36 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = sublimelms/Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,13 +99,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63894ECE18C0126C00C2C647 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				63894ECF18C0126C00C2C647 /* JSON.h */,
+				63894ED018C0126C00C2C647 /* NSObject+SBJSON.h */,
+				63894ED118C0126C00C2C647 /* NSObject+SBJSON.m */,
+				63894ED218C0126C00C2C647 /* NSString+SBJSON.h */,
+				63894ED318C0126C00C2C647 /* NSString+SBJSON.m */,
+				63894ED418C0126C00C2C647 /* SBJsonBase.h */,
+				63894ED518C0126C00C2C647 /* SBJsonBase.m */,
+				63894ED618C0126C00C2C647 /* SBJsonParser.h */,
+				63894ED718C0126C00C2C647 /* SBJsonParser.m */,
+				63894ED818C0126C00C2C647 /* SBJsonWriter.h */,
+				63894ED918C0126C00C2C647 /* SBJsonWriter.m */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		638AED7118BF5B9900D4ECFC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		638AED7418BF5C2200D4ECFC /* Authorizations */ = {
+			isa = PBXGroup;
+			children = (
+				638AED7518BF5C2200D4ECFC /* lmsGetDomain.h */,
+				638AED7618BF5C2200D4ECFC /* lmsGetDomain.m */,
+				638AED7718BF5C2200D4ECFC /* lmsGetDomain.xib */,
+				638AED7818BF5C2200D4ECFC /* lmsLogin.h */,
+				638AED7918BF5C2200D4ECFC /* lmsLogin.m */,
+				638AED7A18BF5C2200D4ECFC /* lmsLogin.xib */,
+			);
+			path = Authorizations;
+			sourceTree = "<group>";
+		};
+		638AED7F18BF5C4500D4ECFC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				638AED8018BF5C4500D4ECFC /* defaults.h */,
+				638AED8118BF5C4500D4ECFC /* defaults.m */,
+				638AED8218BF5C4500D4ECFC /* lmsStore.h */,
+				638AED8318BF5C4500D4ECFC /* lmsStore.m */,
+				638AED9118BF6B8800D4ECFC /* lmsRESTProxy.h */,
+				638AED9218BF6B8800D4ECFC /* lmsRESTProxy.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		638AED8618BF5C5C00D4ECFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				638AED8718BF5C5C00D4ECFC /* loginimage.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		639030CD18BCB6540071CC36 = {
 			isa = PBXGroup;
 			children = (
-				6390311E18BCCD0E0071CC36 /* Resources */,
+				639030E218BCB6540071CC36 /* sublimelms */,
 				6390311B18BCCC370071CC36 /* defaults.h */,
 				6390311C18BCCC370071CC36 /* defaults.m */,
-				639030E218BCB6540071CC36 /* sublimelms */,
+				638AED7118BF5B9900D4ECFC /* New Group */,
 				639030DB18BCB6540071CC36 /* Frameworks */,
 				639030D918BCB6540071CC36 /* Products */,
 			);
@@ -102,8 +191,10 @@
 		639030E218BCB6540071CC36 /* sublimelms */ = {
 			isa = PBXGroup;
 			children = (
-				638AED6C18BF50C000D4ECFC /* Authorizations */,
-				6390311518BCCA110071CC36 /* Utilities */,
+				63894ECE18C0126C00C2C647 /* json */,
+				638AED8618BF5C5C00D4ECFC /* Resources */,
+				638AED7F18BF5C4500D4ECFC /* Utilities */,
+				638AED7418BF5C2200D4ECFC /* Authorizations */,
 				639030EB18BCB6540071CC36 /* AppDelegate.h */,
 				639030EC18BCB6540071CC36 /* AppDelegate.m */,
 				639030EE18BCB6540071CC36 /* FirstViewController.h */,
@@ -189,9 +280,9 @@
 				639030FB18BCB6550071CC36 /* second@2x.png in Resources */,
 				639030FE18BCB6550071CC36 /* FirstViewController.xib in Resources */,
 				6390310118BCB6550071CC36 /* SecondViewController.xib in Resources */,
-				6390311618BCCA110071CC36 /* Utilities in Resources */,
-				6390311F18BCCD0E0071CC36 /* Resources in Resources */,
-				638AED6D18BF50C000D4ECFC /* Authorizations in Resources */,
+				638AED7C18BF5C2200D4ECFC /* lmsGetDomain.xib in Resources */,
+				638AED7E18BF5C2200D4ECFC /* lmsLogin.xib in Resources */,
+				638AED8818BF5C5C00D4ECFC /* loginimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +298,15 @@
 				639030F018BCB6540071CC36 /* FirstViewController.m in Sources */,
 				639030F718BCB6550071CC36 /* SecondViewController.m in Sources */,
 				6390311D18BCCC370071CC36 /* defaults.m in Sources */,
+				638AED7B18BF5C2200D4ECFC /* lmsGetDomain.m in Sources */,
+				638AED7D18BF5C2200D4ECFC /* lmsLogin.m in Sources */,
+				638AED8518BF5C4500D4ECFC /* lmsStore.m in Sources */,
+				638AED9318BF6B8800D4ECFC /* lmsRESTProxy.m in Sources */,
+				63894EDA18C0126C00C2C647 /* NSObject+SBJSON.m in Sources */,
+				63894EDB18C0126C00C2C647 /* NSString+SBJSON.m in Sources */,
+				63894EDC18C0126C00C2C647 /* SBJsonBase.m in Sources */,
+				63894EDD18C0126C00C2C647 /* SBJsonParser.m in Sources */,
+				63894EDE18C0126C00C2C647 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +344,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					arm6,
+					arm7,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -260,7 +364,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SOURCE_ROOT;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -269,7 +375,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					arm6,
+					arm7,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -278,8 +388,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SOURCE_ROOT;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -294,9 +406,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sublimelms/sublimelms-Prefix.pch";
-				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "Utilities Authorizations";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = "sublimelms/sublimelms-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				WRAPPER_EXTENSION = app;
@@ -312,9 +425,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sublimelms/sublimelms-Prefix.pch";
-				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "Utilities Authorizations";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = "sublimelms/sublimelms-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				WRAPPER_EXTENSION = app;

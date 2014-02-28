@@ -40,13 +40,22 @@
     if ([lmsStore domainName]==nil)
     {
         lmsGetDomain *l_getDomain = [[lmsGetDomain alloc] initWithNibName:@"lmsGetDomain" andReturnCallback:__domainCaptured];
-        [self.window addSubview:l_getDomain.view];
-        //self.window.rootViewController = getDomain;
+        //[self.window addSubview:l_getDomain.view];
+        self.window.rootViewController = l_getDomain;
         [self.window makeKeyAndVisible];
         //[getDomain release];
         return YES;
     }
     
+    if ([lmsStore accessToken]==nil)
+    {
+        lmsLogin *l_login = [[lmsLogin alloc] initWithNibName:@"lmsLogin" andReturnCallback:__loginSucceeded];
+        //[self.window addSubview:login.view];
+        self.window.rootViewController = l_login;
+        [self.window makeKeyAndVisible]; 
+        //[login release];
+        return YES;
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -107,11 +116,11 @@
 - (void) domainCaptured:(NSDictionary*) p_domainInfo;
 {
     //[getDomain.view removeFromSuperview];
-    NSLog(@"inside domain captured event");
+    NSLog(@"inside domain captured event and domain info %@", p_domainInfo);
     [lmsStore writeDomainName:[p_domainInfo valueForKey:@"domain"]];
-    lmsLogin *l_login = [[lmsLogin alloc] initWithNibName:@"lmsLogin" andReturnCallback:__loginSucceeded andDomainName:[lmsStore domainName]];
-    [self.window addSubview:l_login.view];
-    //self.window.rootViewController = login;
+    lmsLogin *l_login = [[lmsLogin alloc] initWithNibName:@"lmsLogin" andReturnCallback:__loginSucceeded];
+    //[self.window addSubview:l_login.view];
+    self.window.rootViewController = l_login;
     [self.window makeKeyAndVisible];   
     //[login release];
 }

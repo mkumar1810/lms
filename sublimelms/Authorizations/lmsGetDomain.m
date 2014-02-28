@@ -69,8 +69,9 @@ static bool shouldScroll = true;
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -111,7 +112,8 @@ static bool shouldScroll = true;
 {
     //NSLog(@"dictionary datra %@", loginInputs);
     [self.view removeFromSuperview];
-    [[NSNotificationCenter defaultCenter] postNotificationName:returnNotify object:self userInfo: [[NSDictionary alloc] initWithObjectsAndKeys:[[NSString alloc] initWithFormat:@"%@",txtdomain.text ] , @"domain", nil]];  
+    //[[NSNotificationCenter defaultCenter] postNotificationName:returnNotify object:self userInfo: [[NSDictionary alloc] initWithObjectsAndKeys:[[NSString alloc] initWithFormat:@"%@",txtdomain.text ] , @"domain", nil]];  
+    __returnNotify([[NSDictionary alloc] initWithObjectsAndKeys:[[NSString alloc] initWithFormat:@"%@",txtdomain.text ] , @"domain", nil]);
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section

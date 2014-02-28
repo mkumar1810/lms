@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "defaults.h"
+#import "lmsStore.h"
 
 @interface lmsLogin : UIViewController <UIWebViewDelegate>
 {
@@ -19,7 +20,7 @@
     NSString *l_accesscode;
 }
 
-- (id)initWithNibName:(NSString *) xibName andReturnCallback:(NSString*) p_retNotify andDomainName:(NSString*) p_domainName;
+- (id)initWithNibName:(NSString *) xibName andReturnCallback:(METHODCALLBACK) p_retNotify;
 
 @property (nonatomic, retain) UIWebView *wv;
 @property (nonatomic, retain) UIActivityIndicatorView *actView;

@@ -11,13 +11,13 @@
 @implementation lmsLogin
 @synthesize wv, actView;
 
-- (id)initWithNibName:(NSString *) xibName andReturnCallback:(NSString*) p_retNotify andDomainName:(NSString*) p_domainName
+- (id)initWithNibName:(NSString *) xibName andReturnCallback:(METHODCALLBACK) p_retNotify 
 {
     self = [super initWithNibName:xibName bundle:nil];
     if (self) {
         __returnNotify = p_retNotify;
         // Custom initialization
-        l_domainname = p_domainName;
+        l_domainname = [lmsStore domainName];
     } 
     return self;
 }
@@ -101,7 +101,8 @@
             NSArray *codeData = [requestString componentsSeparatedByString:@"="];
             NSLog(@"code found %@", [codeData objectAtIndex:1]);
             [self.view removeFromSuperview];
-            [[NSNotificationCenter defaultCenter] postNotificationName:returnNotify object:self userInfo:[[NSDictionary alloc] initWithObjectsAndKeys:[[NSString alloc] initWithFormat:@"%@",[codeData objectAtIndex:1]], @"code", nil]];
+            //[[NSNotificationCenter defaultCenter] postNotificationName:returnNotify object:self userInfo:[[NSDictionary alloc] initWithObjectsAndKeys:[[NSString alloc] initWithFormat:@"%@",[codeData objectAtIndex:1]], @"code", nil]];
+            __returnNotify([[NSDictionary alloc] initWithObjectsAndKeys:[[NSString alloc] initWithFormat:@"%@",[codeData objectAtIndex:1]], @"code", nil]);
             l_notified = YES;
         }
     }

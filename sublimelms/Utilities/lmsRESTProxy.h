@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "defaults.h"
+#import "lmsStore.h"
 
-@interface lmsRESTProxy : NSObject
+
+@interface lmsRESTProxy : NSObject <NSURLConnectionDataDelegate,NSURLConnectionDelegate>
 {
-    NSString *_reportType;
+    NSString *_responseType;
 	NSMutableData *webData;
     NSXMLParser *xmlParser; 
 	NSMutableString *parseElement,*value;
@@ -22,6 +24,9 @@
     METHODCALLBACK _proxyReturnMethod;
 }
 
-- (void) initWithAPIType:(NSString*) p_apiType andInputParams:(NSDictionary*) prmDict andReturnMethod:(METHODCALLBACK) p_returnMethod;
+- (id) fetchDataWithAPIType:(NSString*) p_apiType andInputParams:(NSDictionary*) prmDict andReturnMethod:(METHODCALLBACK) p_returnMethod;
+- (void) generateData;
+- (void) showAlertMessage:(NSString *) dispMessage;
+- (void) returnErrorMessage:(NSString*) p_errmsg;
 
 @end

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Authorizations/lmsGetDomain.h"
-#import "Utilities/defaults.h"
-#import "Utilities/lmsStore.h"
-#import "Authorizations/lmsLogin.h"
+#import "lmsGetDomain.h"
+#import "defaults.h"
+#import "lmsLogin.h"
+#import "lmsStore.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 {
